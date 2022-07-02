@@ -2,6 +2,23 @@ Link to My Project :: -->
 
 https://62c00848b640961b1210771d--the-awesome-ananyadas162-site.netlify.app/
 
+Some Demonstrations of my Websites :: ->>
+
+(1) Weather-Status :: Mist
+
+<img src="https://github.com/AnanyaDas162/Wind-Blow/raw/main/Screenshots/2022-06-30 (2).png" alt="thumb-nail" style="max-width:100%;">
+
+(2) Weather-Status :: Clouds
+
+<img src="https://github.com/AnanyaDas162/Wind-Blow/raw/main/Screenshots/2022-07-02 (4).png" alt="thumb-nail" style="max-width:100%;">
+
+(3) Weather-Status :: Haze
+
+<img src="https://github.com/AnanyaDas162/Wind-Blow/raw/main/Screenshots/2022-07-02 (5).png" alt="thumb-nail" style="max-width:100%;">
+
+4) Weather-Status :: Clear
+
+<img src="https://github.com/AnanyaDas162/Wind-Blow/raw/main/Screenshots/2022-07-02 (6).png" alt="thumb-nail" style="max-width:100%;">
 
 # Getting Started with Create React App
 
