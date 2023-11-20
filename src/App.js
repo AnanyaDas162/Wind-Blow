@@ -7,6 +7,8 @@ import haze2 from "./Images/haze2.jpg";
 import storm from "./Images/storm.jpg";
 import './App.css';
 
+
+
 function App() {
 
 const [api, setApi] = useState("Kolkata");
