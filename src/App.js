@@ -83,20 +83,37 @@ async function weather_data(){
   calcTime(res.timezone);*/
 
    console.log(res.dt);
+   try {
+    // Assuming res.city contains the city name and res.weather[0].main contains the weather condition
+    const imageUrl = "https://source.unsplash.com/1600x900/?" + encodeURIComponent(res.weather[0].description) + "," + encodeURIComponent(res.city);
 
-   if (res.weather[0].main === "Haze"){
-    setImg(haze2);
+    console.log("Generated Image URL:", imageUrl);
+    setImg(imageUrl);
+  } catch (e) {
+    console.error("Error setting background image:", e);
+    // Fallback to setting background image based on weather condition
+    switch (res.weather[0].main) {
+      case "Haze":
+        setImg(haze2);
+        break;
+      case "Clouds":
+        setImg(rain3);
+        break;
+      case "Clear":
+        setImg(sunny1);
+        break;
+      case "Rain":
+        setImg(rain);
+        break;
+      case "Thunderstorm":
+        setImg(storm);
+        break;
+      default:
+        setImg(Mist);
+    }
   }
-  else if (res.weather[0].main === "Clouds")  {setImg(rain3);
-  }
-  else if (res.weather[0].main === "Clear"){setImg(sunny1);
-  }
-  else if (res.weather[0].main === "Rain"){setImg(rain);}
-  else if (res.weather[0].main === "Thunderstorm"){setImg(storm);}
-  else{
-    setImg(Mist);
-   }
-
+  
+ 
  }
 
  
